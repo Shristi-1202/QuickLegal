@@ -37,7 +37,7 @@ function QueryModal({ close }) {
     try {
       setLoading(true);
 
-      const res = await fetch("http://localhost:5000/api/query", {
+      const res = await fetch("https://quicklegal-vipi.onrender.com/api/query", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form)

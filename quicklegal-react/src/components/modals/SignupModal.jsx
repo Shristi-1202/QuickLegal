@@ -115,7 +115,7 @@ function SignupModal({ close }) {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/api/send-email-otp", {
+      const res = await fetch("https://quicklegal-vipi.onrender.com/api/send-email-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: form.email }),
@@ -141,7 +141,7 @@ function SignupModal({ close }) {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/api/verify-email-otp", {
+      const res = await fetch("https://quicklegal-vipi.onrender.com/api/verify-email-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

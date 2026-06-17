@@ -8,7 +8,7 @@ function AdminQuery() {
   // 🔥 FETCH ALL QUERIES
   const fetchQueries = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/query");
+      const res = await fetch("https://quicklegal-vipi.onrender.com/api/query");
       const data = await res.json();
       setQueries(data);
     } catch (err) {
@@ -30,7 +30,7 @@ function AdminQuery() {
     }
 
     try {
-      await fetch(`http://localhost:5000/api/query/${id}`, {
+      await fetch(`https://quicklegal-vipi.onrender.com/api/query/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json"

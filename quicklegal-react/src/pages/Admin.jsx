@@ -10,7 +10,7 @@ function Admin() {
   const fetchData = async () => {
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:5000/api/notary");
+      const res = await fetch("https://quicklegal-vipi.onrender.com/api/notary");
       const data = await res.json();
       setRequests(data);
     } catch (err) {
@@ -28,7 +28,7 @@ function Admin() {
   const handleDelete = async (id) => {
     if (!window.confirm("Delete this request?")) return;
 
-    await fetch(`http://localhost:5000/api/notary/${id}`, {
+    await fetch(`https://quicklegal-vipi.onrender.com/api/notary/${id}`, {
       method: "DELETE",
     });
 
@@ -37,7 +37,7 @@ function Admin() {
 
   // 🔥 STATUS UPDATE
   const handleStatus = async (id, newStatus) => {
-    await fetch(`http://localhost:5000/api/notary/${id}`, {
+    await fetch(`https://quicklegal-vipi.onrender.com/api/notary/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ status: newStatus }),
@@ -99,7 +99,7 @@ function Admin() {
                 <p>
                   <strong>Document:</strong>{" "}
                   <a
-                    href={`http://localhost:5000/uploads/${req.document}`}
+                    href={`https://quicklegal-vipi.onrender.com/uploads/${req.document}`}
                     target="_blank"
                     rel="noreferrer"
                   >

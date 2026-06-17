@@ -35,7 +35,7 @@ function NotaryModal({ close }) {
       data.append(key, formData[key]);
     });
 
-    await fetch("http://localhost:5000/api/notary", {
+    await fetch("https://quicklegal-vipi.onrender.com/api/notary", {
       method: "POST",
       body: data,
     });

@@ -27,7 +27,7 @@ function UserDashboard() {
     try {
       setLoading(true);
 
-      const res = await fetch("http://localhost:5000/api/notary");
+      const res = await fetch("https://quicklegal-vipi.onrender.com/api/notary");
       const data = await res.json();
 
       const filtered = data.filter(
@@ -49,7 +49,7 @@ function UserDashboard() {
     try {
       setLoading(true);
 
-      const res = await fetch("http://localhost:5000/api/query");
+      const res = await fetch("https://quicklegal-vipi.onrender.com/api/query");
       const data = await res.json();
 
       const user = JSON.parse(localStorage.getItem("user"));
@@ -146,7 +146,7 @@ function UserDashboard() {
                   <p>
                     <strong>Document:</strong>{" "}
                     <a
-                      href={`http://localhost:5000/uploads/${item.document}`}
+                      href={`https://quicklegal-vipi.onrender.com/uploads/${item.document}`}
                       target="_blank"
                       rel="noreferrer"
                     >
