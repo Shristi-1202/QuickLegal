@@ -11,7 +11,7 @@ function Hero() {
         playsInline
         className="hero-video"
       >
-        <source src="/public/assets/WhatsApp Video 2025-07-17 at 10.45.46_45eb29ac.mp4" type="video/mp4" />
+        <source src="/assets/WhatsApp Video 2025-07-17 at 10.45.46_45eb29ac.mp4" type="video/mp4" />
       </video>
     </section>
   );
