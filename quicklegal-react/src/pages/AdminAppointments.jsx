@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./appointment.css";
+import "./Appointment.css";
 
 function AdminAppointments() {
 
